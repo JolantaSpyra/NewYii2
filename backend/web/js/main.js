@@ -1,9 +1,12 @@
 $(function(){
+	// alert('asd');
 
-	// $("#modalButton").click(function(){
-	// 	$("#modal").modal('show').find("#modalContent").load($(this).attr('value'));
-	// });
-	console.log("Test")
+	$("#modalButton").click(function(){
+		$("#modal").modal('show').find("#modalContent").load($(this).attr('value'));
+	});
+
+	
+	// console.log("Test")
     // $("#modal").modal('show').find("#modalContent").load($(this).attr('value'));
 
 });

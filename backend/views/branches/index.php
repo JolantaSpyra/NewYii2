@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ]);
         echo "<div id='modalContent'></div>";
         Modal::end();
+
     ?>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -57,5 +58,11 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
+
+<?php 
+        $this->registerJsFile(Yii::$app->request->baseUrl.'/js/main.js', [    
+            'depends' => [\yii\web\JqueryAsset::className()]
+        ]); 
+?>
 
 </div>
